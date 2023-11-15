@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Estilos generales */
+p, a, li, h1, h3 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* CABECERA */
+.cabecera {
+    width: 100%;
+    height: 50vh;
+    background: url(Imagenes/fondoLogo.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow: visible;
+    background-position: 200% -6cm; 
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.cabecera img {
+    width: 200px;
+    margin-left: 10px;
+    display: block;
+    margin: auto;
+}
+
+.cabecera h1 {
+    text-align: center;
+    font-size: 38px;
+    color: #F69F2C;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+}
+
+.cabecera h3 {
+    font-size: 30px;
+    text-align: center;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    color: #cf7500;
+    letter-spacing: 8px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* MENU */
+.menu {
+    background: #333;
+    overflow: hidden;
+    margin-bottom: -8px;
+    margin-top: 1px;
+    padding-top: 1px;
+}
+
+.menu ul li {
+    list-style: none;
+    display: inline;
+}
+
+.menu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu ul li a:hover {
+    color: #F69F2C;
+}
+
+/* CUERPO */
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden; /* Mantiene el desplazamiento horizontal */
+    overflow-y: auto; /* Elimina el desplazamiento vertical */
+}
+
+.slider {
+    width: 100%;
+}
+
+.iconos {
+    overflow: hidden;
+    margin: 20px 0px;
+}
+
+.iconos h3 {
+    text-align: center;
+    color: #444444;
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: underline;
+}
+
+.iconos div {
+    width: 24%;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.iconos div img {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.iconos div p {
+    color: #333;
+    font-size: 24px;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.bienvenida {
+    background: #F69F2C;
+    padding: 20px;
+}
+
+.bienvenida h3 {
+    text-align: center;
+    margin-top: auto;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 9px;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bienvenida p {
+    text-align: center;
+    color: #ffffff;
+    margin: 20px 30px;
+    font-size: 1.2rem;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+#titulo {
+    text-align: center;
+    color: orange;
+    background-color: #dddddd;
+    padding: 1rem;
+    border-spacing: 2;
+    margin-top: -8px;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#nuestro {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+#nuestro + p,
+#oculto {
+    font-size: 16px;
+    color: #333;
+    text-align: justify;
+    margin: 20px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+article p {
+    font-size: 16px;
+    color: #333;
+    text-align: justify;
+    margin: 20px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+article img {
+    display: block;
+    margin: auto;
+    
+}
+
+#mostrar {
+    background-color: #F69F2C;
+    color: white;
+    border: none;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    font-family: 'Poppins', sans-serif;
+}
+
+#mostrar:hover {
+    background-color: #cf7500;
+}
+
+#listaProducto {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: underline;
+}
+
+.product-display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif; /* Distribuye los elementos horizontalmente */
+}
+
+.product-item {
+    width: calc(20% - 2px); /* Ancho del producto */
+    margin: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%; /* Ajusta el tamaño de la imagen */
+    margin-bottom: 10px;
+}
+
+.product-item .product-image {
+    width: 20%; /* Asegura que todas las imágenes tengan el mismo ancho */
+}
+
+/* Detalles de compra */
+#detalleCompra {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+}
+
+#detalleCompra label,
+#detalleCompra2 {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#detalleCompra input[type="text"],
+#detalleCompra input[type="email"],
+#detalleCompra input[type="number"],
+#detalleCompra select {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+#detalleCompra button {
+    background-color: #F69F2C;
+    color: white;
+    border: none;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    font-family: 'Poppins', sans-serif;
+}
+
+#detalleCompra button:hover {
+    background-color: #cf7500;
+    color: white;
+}
+
+.agregarAlCarrito {
+    background-color: #F69F2C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.agregarAlCarrito:hover {
+    background-color: #cf7500;
+    color: white;
+}
+
+#enviarDatosTarjeta,
+#enviarDatosEfectivo,
+#finalizarCompra,
+#cancelarCompra {
+    background-color: #F69F2C;
+    color: white;
+    border: none;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    font-family: 'Poppins', sans-serif;
+}
+
+#formContacto {
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+#formContacto label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 16px;
+}
+
+
+#formContacto input[type="email"],
+#formContacto input[type="text"],
+#formContacto select,
+#formContacto textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#formContacto textarea {
+    resize: vertical;
+}
+
+#formContacto button {
+    background-color: #F69F2C;
+    color: white;
+    border: none;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    font-family: 'Poppins', sans-serif;
+}
+
+#formContacto button:hover {
+    background-color: #cf7500;
+    color: white;
+}
+
+#formulario {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+#formulario + p {
+    font-size: 16px;
+    color: #333;
+    text-align: justify;
+    margin: 20px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.redes-sociales {
+    text-align: center;
+}
+
+.redes-sociales a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.redes-sociales img {
+    width: 70px;
+    height: auto;
+}
+
+article {
+    text-align: center;
+    border-bottom: 1px solid #ccc; /* Define el estilo de la línea divisoria */
+    padding-bottom: 20px; /* Opcional: espacio entre cada artículo */
+    margin-bottom: 20px; /* Opcional: espacio entre cada artículo */
+}
+
+/* PIE DE PAGINA */
+.pieDePagina {
+    background: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+    font-size: 15px;
+    position: absolute;
+    width: 100%;
+    letter-spacing: 3px;
+    font-family: 'Poppins', sans-serif;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimalCam - Sitio Oficial</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="./animal.js"></script>
+</head>
+<body>
+    
+    <header class="cabecera">
+        <img src="Imagenes/Logotipo.png" alt="AnimalCamLogo">
+        <div class="parralax">
+            <h3>"Comodidad sostenible, felicidad duradera."</h3>
+        </div>
+    </header>
+    
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h1 id="titulo">Contacto</h1>
+    </section>
+
+    <article>
+        <h3 id="formulario">Formulario de contacto</h3>
+        <p>Estamos siempre dispuestos a escuchar tus inquietudes, sugerencias o reclamos. Tu opinión es fundamental para nosotros.
+           Si deseas comunicarte con nuestro equipo, puedes enviarnos un mensaje a través de nuestro formulario de contacto, donde estaremos encantados de responder tus preguntas. </p>
+    
+        <form id="formContacto">
+            <div class="form-group" id="estiloform">
+                <label for="exampleFormControlSelect1">Nombre y apellido</label>
+                <input class="form-control" id="exampleFormControlSelect1">
+            </div>
+            <div class="form-group" id="estiloform">
+                <label for="exampleFormControlInput1">Mail</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre@example.com">
+            </div>
+            <div class="form-group" id="estiloform">
+                <label for="messageType">Seleccione el tipo de mensaje:</label>
+                <select class="form-control" id="messageType">
+                    <option value="tipoMensaje">Seleccione tipo de mensaje</option>
+                    <option value="resena">Reseña</option>
+                    <option value="reclamoSugerencia">Reclamo/Sugerencia</option>
+                </select>
+            </div>
+            <div class="form-group" id="estiloform">
+                <label for="exampleFormControlTextarea1">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escriba aquí su mensaje"></textarea>
+            </div>
+    
+            <!-- Agregar el botón de selección del tipo de mensaje -->
+    
+            <button type="reset" id="btnContacto">Enviar</button>
+        </form>
+
+    </article>
+
+    <article>
+        <h3 id="formulario">Redes Sociales</h3>
+        <p>Estamos activos en nuestras redes sociales, un espacio donde compartimos novedades, promociones y eventos relevantes.
+            ¡No dudes en contactarnos para construir juntos una experiencia excepcional!</p>
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/AnimalCam.Oficial" target="_blank">
+                <img src="./Imagenes/facebook-logo.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/animalcam.oficial" target="_blank">
+                <img src="./Imagenes/instagram-logo.png" alt="Instagram">
+            </a>
+            <!-- Agrega otros enlaces a redes sociales según sea necesario -->
+        </div>
+    </article>
+
+    <footer class="pieDePagina">
+        <p>Derechos Reservados (c) 2023 - AnimalCam</p>
+    </footer>
+    
+</body>
+</html>

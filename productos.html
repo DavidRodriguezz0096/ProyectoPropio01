@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimalCam - Sitio Oficial</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="./productos.js"></script>
+</head>
+<body>
+    
+    <header class="cabecera">
+        <img src="Imagenes/Logotipo.png" alt="AnimalCamLogo">
+        <h3>"Comodidad sostenible, felicidad duradera."</h3>
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h1 id="titulo">Productos</h1>
+    </section>
+    <article>
+        <h3 id="nuestro">Nuestro producto</h3>
+        <p>Utilizamos tecnología innovadora de reciclaje que procesa y funde el plástico, generando así un material flexible, liso, resistente y térmico. Esta capacidad técnica nos permite transformar plásticos reciclados en productos de alta calidad que satisfacen las necesidades de confort de las mascotas.</p>
+    </article>
+    <article>
+        <h3 id="listaProducto">Actualmente en venta:</h3>
+        <div class="product-display" id="productDisplay"></div>
+        
+        <div id="detalleCompra" style="display: none;">
+            <h2>Detalles del carrito</h2>
+
+            <div>
+                <h3 id="detalleCompra2">Datos del Cliente</h3>
+                <label for="nombreCliente">Nombre:</label>
+                <input type="text" id="nombreCliente" placeholder="Ingrese su nombre">
+
+                <label for="clienteEmail">Correo Electrónico:</label>
+                <input type="email" id="clienteEmail" placeholder="Ingrese su correo electrónico">
+            </div>
+
+            <div>
+                <h3 id="detalleCompra2">Forma de pago</h3>
+                <label for="formaDePago">Seleccione la forma de pago:</label>
+                <select id="formaDePago">
+                    <option value="Ejija su metodo preferido">Elección de metodo de pago</option>
+                    <option value="tarjetaCredito">Tarjeta de Crédito/Débito</option>
+                    <option value="efectivo">Efectivo</option>
+                </select>
+            </div>
+
+            <div id="datosTarjeta" style="display: none;">
+                <h3>Datos de tarjeta</h3>
+                <label for="numeroTarjeta">Número de tarjeta:</label>
+                <input type="text" id="numeroTarjeta" placeholder="Ingrese el número de su tarjeta">
+                <label for="nombreTitular">Nombre del titular</label>
+                <input for="text" id="nombreTitular" placeholder="Ingrese el nombre del titular">
+                <label for="numeroCvv">Número de CVV</label>
+                <input type="number" id="numeroCvv" placeholder="Ingrese el número de CVV">
+                <label for="text" id="numeroDocumento">Número de documento</label>
+                <input type="text" id="numeroDocumento" placeholder="Ingrese el número de DNI del titular">
+                <button id="enviarDatosTarjeta">Enviar datos de pago con tarjeta</button>
+
+            </div>
+            <div id="datosEfectivo" style="display: none;">
+                <h3>Detalle de Efectivo</h3>
+                <label for="GenerarCupon">¿Desea generar el cupón de pago?</label>
+                <input type="checkbox" id="generarCupon">
+                <label for="tiempoLimite">Tiempo limite para completar la transacción:</label>
+                <input type="text" id="tiempoLimite" placeholder="Ingrese el tiempo límite en días">
+                <button id="enviarDatosEfectivo">Enviar datos del pago en efectivo</button>
+            </div>
+
+            <div>
+                <h3 id="detalleCompra2">Detalles de Envío</h3>
+                <select id="metodoEnvio">
+                    <option value="SeleccionEnvio">Seleccione modalidad de entrega</option>
+                    <option value="envioDomicilio">Envío a Domicilio</option>
+                    <option value="retiroSucursal">Retiro en sucursal</option>
+                </select>
+                <div id="direccionDomicilio">
+                    Dirección de domicilio: <input type="text" id="direccionCliente">
+                </div>
+                
+                <div id="direccionSucursal" style="display: none;">
+                   Dirección de la sucursal: 123 Calle Principal, Ciudad
+                </div>
+
+            </div>
+
+            <div>
+                <h3 id="detalleCompra2">Resumen del carrito</h3>
+                <ul id="carritoItems"></ul>
+                <p>Total: <span id="totalCarrito">$0.00</span></p>
+            </div>
+
+            <button id="finalizarCompra">Finalizar Compra</button>
+            <button id="cancelarCompra">Cancelar Compra</button>
+
+        </div>
+    </article>
+
+    <footer class="pieDePagina">
+        <p>Derechos Reservados (c) 2023 - AnimalCam</p>
+    </footer>
+</body>
+</html>
